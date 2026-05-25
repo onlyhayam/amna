@@ -10,11 +10,15 @@ Unify your whole digital presence in one place, safely and privately. Access it 
 
 Note : It is currently in development stage. Bugs are expected and contributions are welcomed.
 ---
-<img src="https://github.com/onlyhayam/amna/blob/stable/web/img/connect.svg" alt="connect" width=30 />
-<img src="https://github.com/onlyhayam/amna/blob/stable/web/img/layout-list.svg" alt="todo" width=30 />
-<img src="https://github.com/onlyhayam/amna/blob/stable/web/img/journal.svg" alt="journal" width=30 />
-<img src="https://github.com/onlyhayam/amna/blob/stable/web/img/note.svg" alt="note" width=30 />
-<img src="https://github.com/onlyhayam/amna/blob/stable/web/img/calender.svg" alt="calender" width=30 />
-<img src="https://github.com/onlyhayam/amna/blob/stable/web/img/statistics.svg" alt="statistics" width=30 />
 
+<div style="display: flex; gab: 10px; justify-content:center; width:100;>
+  
+<img src="https://github.com/onlyhayam/amna/blob/stable/web/img/connect.svg" alt="connect" />
+<img src="https://github.com/onlyhayam/amna/blob/stable/web/img/layout-list.svg" alt="todo" />
+<img src="https://github.com/onlyhayam/amna/blob/stable/web/img/journal.svg" alt="journal" />
+<img src="https://github.com/onlyhayam/amna/blob/stable/web/img/note.svg" alt="note" />
+<img src="https://github.com/onlyhayam/amna/blob/stable/web/img/bookmark.svg" alt="bookmark" />
+<img src="https://github.com/onlyhayam/amna/blob/stable/web/img/calender.svg" alt="calender" />
+<img src="https://github.com/onlyhayam/amna/blob/stable/web/img/statistics.svg" alt="statistics" />
 
+</div>
