@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://amna.pages.dev">
-    <img src="https://github.com/onlyhayam/amna/blob/stable/web/img/amna.svg" href="https://github.com/onlyhayam/amna" alt="amna logo" width=180 />
+    <img src="https://github.com/onlyhayam/amna/blob/testing/web/img/amna.svg" href="https://github.com/onlyhayam/amna" alt="amna logo" width=180 />
   </a>
 </p>
 
@@ -8,4 +8,13 @@
 
 Unify your whole digital presence in one place, safely and privately. Access it from anywhere, anytime.
 
-Note : It is currently in development stage. Bugs are expected and contributions are welcomed.
+## Note : It is currently in development stage. Bugs are expected and contributions are welcomed.
+<div style="display: flex; gap: 10px; justify-content: center; width: 100%;">
+  <img src="https://raw.githubusercontent.com/onlyhayam/amna/testing/web/img/connect.svg" alt="connect" />
+  <img src="https://raw.githubusercontent.com/onlyhayam/amna/testing/web/img/todo.svg" alt="todo" />
+  <img src="https://raw.githubusercontent.com/onlyhayam/amna/testing/web/img/journal.svg" alt="journal" />
+  <img src="https://raw.githubusercontent.com/onlyhayam/amna/testing/web/img/note.svg" alt="note" />
+  <img src="https://raw.githubusercontent.com/onlyhayam/amna/testing/web/img/bookmark.svg" alt="bookmark" />
+  <img src="https://raw.githubusercontent.com/onlyhayam/amna/testing/web/img/calender.svg" alt="calender" />
+  <img src="https://raw.githubusercontent.com/onlyhayam/amna/testing/web/img/statistics.svg" alt="statistics" />
+</div>
