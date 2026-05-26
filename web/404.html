@@ -4,29 +4,90 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Amna 404</title>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="icon" href="img/amna.svg" />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="icon" href="/img/amna.svg" />
   </head>
   <body>
-    <img src="/img/amna.svg" width="100px" />
-    <h1>404</h1>
-    <h2>Page Not Found.</h2>
-    <p>
-      You Might Have Followed A Broken Link. Click
-      <a
-        href="/index.html"
-        style="text-decoration: none; color: var(--text); box-shadow: 0 1px 0 0"
-        >Home Page
-      </a>
-      To Go Home.
-    </p>
-
-    <footer>
-      <span>
-        <hr />
-        <img src="/img/amna.svg" />Amna&trade;. Testing:
-        <a href="https://testing.amna.pages.dev">testing.amna.pages.dev</a>. Stable:  <a href="https://amna.pages.dev">amna.pages.dev</a>. 
-      </span>
-    </footer>
+    <div class="head">
+      <h1>
+        Oops ! Cat is lost...
+        <a class="mode" id="theme-toggle"> </a>
+      </h1>
+    </div>
+    <div class="layout">
+      <div class="sidebar">
+        <!-- <a href="#"><img src="/img/amna.svg" /></a> -->
+        <a class="sidebar-toggle">
+          <img src="/img/panel-right-open.svg" />
+          <span>Close Sidebar</span>
+        </a>
+        <a href="/index.html">
+          <img src="/img/house.svg" />
+          <span>Home</span>
+        </a>
+        <a href="/connect/index.html">
+          <img src="/img/connect.svg" />
+          <span>Connect Boards</span>
+        </a>
+        <a href="/todo/index.html">
+          <img src="/img/todo.svg" />
+          <span>To be done</span>
+        </a>
+        <a href="/journal/index.html">
+          <img src="/img/journal.svg" />
+          <span>Journals</span>
+        </a>
+        <a href="/note/index.html">
+          <img src="/img/note.svg" />
+          <span>Notes</span>
+        </a>
+        <a href="/bookmark/index.html">
+          <img src="/img/bookmark.svg" />
+          <span>Bookmarks</span>
+        </a>
+        <a href="/calender/index.html">
+          <img src="/img/calender.svg" />
+          <span>Calender</span>
+        </a>
+        <a href="/statistics/index.html">
+          <img src="/img/statistics.svg" />
+          <span>Statistics</span>
+        </a>
+        <a href="/database/index.html" class="bottom-start">
+          <img src="/img/database.svg" />
+          <span>Database</span>
+        </a>
+        <a href="/settings/index.html">
+          <img src="/img/settings.svg" />
+          <span>Settings</span>
+        </a>
+        <a href="/account/index.html">
+          <img src="/img/account.svg" />
+          <span>Account</span>
+        </a>
+      </div>
+      <div class="main">
+        <div class="notfound">
+          <img src="/img/amna.svg" width="100px" />
+          <h1>404</h1>
+          <h2>Page Not Found.</h2>
+          <p>
+            You Might Have Followed A Broken Link. Click
+            <a
+              href="/index.html"
+              style="
+                text-decoration: none;
+                color: var(--text);
+                box-shadow: 0 1px 0 0;
+              "
+              >Home Page
+            </a>
+            To Go Home.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="/mode.js"></script>
+    <script src="/sidebar.js"></script>
   </body>
 </html>
