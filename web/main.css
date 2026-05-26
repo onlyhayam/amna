@@ -193,10 +193,15 @@ a img {
   background-repeat: no-repeat;
 }
 
+.notfound {
+  padding: 20px;
+}
+
 footer {
   display: flex;
   font-size: 20px;
   gap: 6px;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   filter: var(--icolor);
