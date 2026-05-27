@@ -1,3 +1,7 @@
+html {
+  scrollbar-width: none;
+}
+
 :root {
   --dark: #1f1f1f;
   --mid: #2d2d2d;
@@ -23,7 +27,6 @@
   content: url("img/sun.svg");
 }
 
-/* if user's OS is set to light mode */
 @media (prefers-color-scheme: light) {
   :root {
     --dark: #f0f0f0;
@@ -32,12 +35,26 @@
     --text: #333333;
     --icolor: none;
   }
+  :root.dark {
+    --dark: #1f1f1f;
+    --mid: #2d2d2d;
+    --light: #3d3d3d;
+    --text: #9f9f9f;
+    --icolor: invert(0.4);
+  }
+  .mode {
+    content: url("img/sun.svg");
+  }
+  :root.dark .mode {
+    content: url("img/moon.svg");
+  }
 }
 
 .mode {
   position: absolute;
   right: 20px;
   width: 20px;
+  user-select: none;
 }
 
 body {
@@ -51,14 +68,23 @@ a img {
   -webkit-user-drag: none;
 }
 
+h1 {
+  font-size: 36px;
+}
 .head {
   display: flex;
   flex-direction: row;
   padding-left: 12px;
 }
+.head img {
+  align-content: center;
+  width: 30px;
+  filter: var(--icolor);
+}
 
 .layout {
   display: flex;
+  gap: 10px;
 }
 
 .main {
@@ -66,6 +92,7 @@ a img {
   display: flex;
   flex-direction: column;
 }
+
 .main img {
   width: 30px;
   filter: var(--icolor);
@@ -132,7 +159,7 @@ a img {
   margin-top: auto;
 }
 
-.todo {
+.h-b1 {
   padding-left: 12px;
   width: calc(25% - 10px);
   height: 60vh;
@@ -141,7 +168,7 @@ a img {
   margin-top: 10px;
 }
 
-.diary {
+.h-b2 {
   padding-left: 10px;
   width: calc(50% - 10px);
   height: 60vh;
@@ -151,24 +178,24 @@ a img {
   margin-top: 10px;
 }
 
-.note {
+.h-b3 {
   width: 25%;
   margin-top: 10px;
 }
 
-.bottom-row {
+.h-bottom {
   display: flex;
   width: 100%;
   margin-top: 20px;
 }
 
-.box-left {
+.h-bottom-left {
   padding-left: 10px;
   width: 50%;
   min-height: 200px;
 }
 
-.box-right {
+.h-bottom-right {
   width: 50%;
   min-height: 200px;
 }
@@ -182,7 +209,7 @@ a img {
   align-items: center;
 }
 
-.nested-inner {
+.nested-box {
   background: var(--light);
   border-radius: 8px;
   width: 100%;
@@ -191,6 +218,19 @@ a img {
   background-size: 100px auto;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.sub-pages {
+  background: var(--mid);
+  border-radius: var(--radius);
+  width: calc(100% - 10px);
+}
+
+dt {
+  padding: 10px;
+}
+dd {
+  padding-bottom: 30px;
 }
 
 .notfound {
@@ -215,4 +255,13 @@ footer a {
   text-decoration: none;
   color: var(--text);
   box-shadow: 0 1px 0 0;
+}
+
+/*____________________________________________________________
+ --------------------- ID Specific ---------------------------
+ ___________________________________________________________ */
+
+#profile {
+  width: 300px;
+  filter: none;
 }
