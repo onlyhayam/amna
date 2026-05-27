@@ -62,6 +62,11 @@ body {
   background-color: var(--dark);
   color: var(--text);
 }
+a img {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
 
 h1 {
   font-size: 36px;
