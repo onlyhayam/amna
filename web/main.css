@@ -6,48 +6,25 @@ html {
   --dark: #1f1f1f;
   --mid: #2d2d2d;
   --light: #3d3d3d;
-  --text: #9f9f9f;
-  --icolor: invert(0.4);
+  --text: #808080; /* fyi: Same as invert 0.5 #fff*/
+  --icolor: invert(0.5);
 
   --radius: 8px;
   --margin: 16px;
+  --img3w: 30px;
 }
 
 :root.light {
   --dark: #f0f0f0;
   --mid: #e0e0e0;
   --light: #d0d0d0;
-  --text: #333333;
-  --icolor: none;
+  --text: #808080;
 }
 .mode {
   content: url("img/moon.svg");
 }
 :root.light .mode {
   content: url("img/sun.svg");
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --dark: #f0f0f0;
-    --mid: #e0e0e0;
-    --light: #d0d0d0;
-    --text: #333333;
-    --icolor: none;
-  }
-  :root.dark {
-    --dark: #1f1f1f;
-    --mid: #2d2d2d;
-    --light: #3d3d3d;
-    --text: #9f9f9f;
-    --icolor: invert(0.4);
-  }
-  .mode {
-    content: url("img/sun.svg");
-  }
-  :root.dark .mode {
-    content: url("img/moon.svg");
-  }
 }
 
 .mode {
@@ -62,6 +39,11 @@ body {
   background-color: var(--dark);
   color: var(--text);
 }
+
+.edit {
+  float: right;
+}
+
 a img {
   pointer-events: none;
   user-select: none;
@@ -78,7 +60,7 @@ h1 {
 }
 .head img {
   align-content: center;
-  width: 30px;
+  width: var(--img3w);
   filter: var(--icolor);
 }
 
@@ -94,8 +76,8 @@ h1 {
 }
 
 .main img {
-  width: 30px;
-  filter: var(--icolor);
+  width: var(--img3w);
+  filter: invert(0.5);
 }
 .container {
   display: flex;
@@ -123,8 +105,8 @@ h1 {
 }
 
 .sidebar img {
-  width: 30px;
-  filter: invert(0.4);
+  width: var(--img3w);
+  filter: invert(0.5);
 }
 
 .sidebar.expanded {
@@ -141,7 +123,7 @@ h1 {
   color: var(--text);
   font-size: 16px;
   width: 100%;
-  padding: 0 5px;
+  padding: 5px;
   box-sizing: border-box;
 }
 
@@ -160,27 +142,22 @@ h1 {
 }
 
 .h-b1 {
-  padding-left: 12px;
+  padding: 10px;
   width: calc(25% - 10px);
   height: 60vh;
-  position: relative;
-  z-index: 1;
-  margin-top: 10px;
+  border-right: 1px solid var(--mid);
 }
 
 .h-b2 {
-  padding-left: 10px;
+  padding: 10px;
   width: calc(50% - 10px);
   height: 60vh;
-  border-left: 1px solid var(--mid);
   border-right: 1px solid var(--mid);
-  position: relative;
-  margin-top: 10px;
 }
 
 .h-b3 {
+  padding: 10px;
   width: 25%;
-  margin-top: 10px;
 }
 
 .h-bottom {
@@ -245,11 +222,11 @@ footer {
   padding: 10px;
   justify-content: center;
   align-items: center;
-  filter: var(--icolor);
 }
 
 footer img {
   width: 30px;
+  filter: var(--icolor);
 }
 
 footer a {
