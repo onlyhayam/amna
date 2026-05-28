@@ -221,6 +221,7 @@ h1 {
 }
 
 .sub-pages {
+  display: flex;
   background: var(--mid);
   border-radius: var(--radius);
   width: calc(100% - 10px);
@@ -260,10 +261,3 @@ footer a {
 /*____________________________________________________________
  --------------------- ID Specific ---------------------------
  ___________________________________________________________ */
-
-#PFP {
-  filter: none;
-  width: 200px;
-  padding: 10px;
-  border-radius: 1000px;
-}

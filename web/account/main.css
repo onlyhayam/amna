@@ -1,0 +1,10 @@
+#PFP {
+  filter: none;
+  width: 200px;
+  height: 200px;
+  margin: 13px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #d0d0d0;
+}

@@ -1,5 +1,4 @@
-const [name, age, note, weeklyGoal, monthlyGoal, yearlyGoal, PFP] = [
-  "name",
+const [age, note, weeklyGoal, monthlyGoal, yearlyGoal, PFP] = [
   "age",
   "note",
   "weeklyGoal",
@@ -8,14 +7,13 @@ const [name, age, note, weeklyGoal, monthlyGoal, yearlyGoal, PFP] = [
   "PFP",
 ].map((id) => document.getElementById(id));
 
-name.textContent = "Hayam A.";
 age.textContent = "18";
 note.textContent =
   "This is my first ever project and I shall complete. No exception can be taken.";
 weeklyGoal.textContent = "Gotta make home page pseudo responsive with JS";
 monthlyGoal.textContent = "Make this app fully responsive";
 yearlyGoal.textContent = "Make this app great and polished enough ";
-PFP.src = "/sample/sample.png";
+PFP.style.backgroundImage = "URL('/sample/sample.png')";
 
 /*.............
 Alt (by claude)
