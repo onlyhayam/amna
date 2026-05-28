@@ -261,7 +261,9 @@ footer a {
  --------------------- ID Specific ---------------------------
  ___________________________________________________________ */
 
-#profile {
-  width: 300px;
+#PFP {
   filter: none;
+  width: 200px;
+  padding: 10px;
+  border-radius: 1000px;
 }
