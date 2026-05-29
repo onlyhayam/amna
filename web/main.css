@@ -199,6 +199,7 @@ h1 {
 
 .sub-pages {
   display: flex;
+  flex-wrap: wrap;
   background: var(--mid);
   border-radius: var(--radius);
   width: calc(100% - 10px);
