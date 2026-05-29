@@ -41,10 +41,11 @@ body {
 }
 
 .edit {
+  margin-left: auto;
   float: right;
 }
 
-a img {
+img {
   pointer-events: none;
   user-select: none;
   -webkit-user-drag: none;
@@ -73,6 +74,7 @@ h1 {
   flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .main img {
@@ -200,9 +202,16 @@ h1 {
 .sub-pages {
   display: flex;
   flex-wrap: wrap;
-  background: var(--mid);
+  background-color: var(--mid);
   border-radius: var(--radius);
-  width: calc(100% - 10px);
+  width: 100%;
+}
+
+.sub-pages-2 {
+  border-radius: var(--radius);
+  width: 100%;
+  display: block;
+  background-color: var(--mid);
 }
 
 dt {
