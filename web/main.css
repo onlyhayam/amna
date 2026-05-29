@@ -1,12 +1,12 @@
 html {
   scrollbar-width: none;
 }
-
+/* fyi: #808080 is Same as invert 0.5 #fff */
 :root {
   --dark: #1f1f1f;
   --mid: #2d2d2d;
   --light: #3d3d3d;
-  --text: #808080; /* fyi: Same as invert 0.5 #fff*/
+  --text: #808080;
   --icolor: invert(0.5);
 
   --radius: 8px;
@@ -211,7 +211,8 @@ h1 {
   border-radius: var(--radius);
   width: 100%;
   display: block;
-  background-color: var(--mid);
+  background-color: var(--light);
+  margin: 10px;
 }
 
 dt {
