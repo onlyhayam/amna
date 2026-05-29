@@ -1,0 +1,12 @@
+.box {
+  overflow-wrap: anywhere;
+  width: 100%;
+}
+
+#saveBtn {
+  padding: 5px;
+}
+
+.write {
+  padding: 10px;
+}

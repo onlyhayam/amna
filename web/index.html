@@ -19,18 +19,18 @@
             <img src="img/house.svg" />
             <span>Home</span>
           </a>
-          <a href="/connect/index.html">
+          <!-- <a href="/connect/index.html">
             <img src="img/connect.svg" />
             <span>Connect Boards</span>
-          </a>
+          </a> -->
           <a href="/todo/index.html">
             <img src="img/todo.svg" />
-            <span>To be done</span>
+            <span>To Do</span>
           </a>
-          <a href="/journal/index.html">
+          <!-- <a href="/journal/index.html">
             <img src="img/journal.svg" />
             <span>Journals</span>
-          </a>
+          </a> -->
           <a href="/note/index.html">
             <img src="img/note.svg" />
             <span>Notes</span>
@@ -64,6 +64,7 @@
             <span>Account</span>
           </a>
         </div>
+
         <div class="main">
           <div class="head">
             <h1>
@@ -71,6 +72,7 @@
               <a class="mode" id="theme-toggle"></a>
             </h1>
           </div>
+
           <div class="container">
             <div id="b1" class="h-b1">
               <img src="/img/todo.svg" />
@@ -78,10 +80,11 @@
                 <img id="edit" src="/img/edit.svg" />
               </a>
               <div class="write">
-                <textarea id="b2input" placeholder="To Be Done"></textarea>
+                <textarea id="b1input" placeholder="To Do."></textarea>
               </div>
             </div>
-            <div class="h-b2">
+
+            <!-- <div class="journal">
               <img src="/img/journal.svg" />
               <a class="edit">
                 <img src="/img/edit.svg" />
@@ -89,17 +92,18 @@
               <div class="write">
                 <textarea
                   id="b2input"
-                  placeholder="Good Day? Rough One? Write it here safely & it will be alright &and;&and;"
+                  placeholder="Good Day? Rough One? Burn it as texts here.
+(or just come to Amna Social. there's people to make you smile !)"
                 ></textarea>
               </div>
-            </div>
-            <div class="h-b3">
+            </div> -->
+            <div class="h-b2">
               <img src="/img/note.svg" />
-              <a class="edit">
-                <img src="/img/edit.svg" />
+              <a id="saveBtn" class="edit">
+                <img src="/img/save.svg" />
               </a>
               <div class="write">
-                <textarea id="b3input" placeholder="Notes Here"></textarea>
+                <textarea id="note" placeholder="Notes Here."></textarea>
               </div>
             </div>
           </div>
@@ -128,6 +132,7 @@
         <a href="https://amna.pages.dev">Amna</a>. Thank You !
       </span>
     </footer>
+    <script src="/note/script.js"></script>
     <script src="index.js"></script>
     <script src="/script/main.js"></script>
     <script src="/script/mode.js"></script>

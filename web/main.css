@@ -43,6 +43,7 @@ body {
 .edit {
   margin-left: auto;
   float: right;
+  cursor: pointer;
 }
 
 img {
@@ -152,14 +153,8 @@ h1 {
 
 .h-b2 {
   padding: 10px;
-  width: calc(50% - 10px);
+  width: calc(70% - 10px);
   height: 60vh;
-  border-right: 1px solid var(--mid);
-}
-
-.h-b3 {
-  padding: 10px;
-  width: 25%;
 }
 
 .h-bottom {
