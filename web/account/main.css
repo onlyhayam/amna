@@ -28,10 +28,7 @@
 }
 
 #acc-edit {
-  margin-right: 10px;
-  margin-bottom: 10px;
   padding: 10px;
   cursor: pointer;
-  border: var(--border);
   border-radius: 25%;
 }
